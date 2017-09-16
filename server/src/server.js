@@ -20,12 +20,12 @@ server.use(session({
 }));
 
 // Uncomment when using this server for the client-auth sprint
-// const corsOptions = {
-//    "origin": "http://localhost:3000",
-//    "credentials": true
-// };
+const corsOptions = {
+   "origin": "http://localhost:3000",
+   "credentials": true
+};
 
-// server.use(cors(corsOptions));
+server.use(cors(corsOptions));
 
 /* Sends the given err, a string or an object, to the client. Sets the status
  * code appropriately. */
